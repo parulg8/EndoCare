@@ -79,7 +79,12 @@ streamlit run app.py
 
 Open the URL printed in the terminal (typically `http://localhost:8501`).
 
-Pages: Home, Dataset Explorer, ML Laboratory, Risk Assessment, Explainability, Symptom Awareness, Research and Methodology.
+Pages:
+1. Home
+2. Understand Your Symptoms
+3. Risk Assessment
+4. About the Technology
+5. About ENDOCARE
 
 The **Symptom Awareness** questionnaire is educational only and is **not** passed into the model.
 
