@@ -1,0 +1,7 @@
+feature,importance,kind
+Hormone_Level_Abnormality,0.4590257406234741,impurity_or_gain
+Menstrual_Irregularity,0.1401674598455429,impurity_or_gain
+Infertility,0.1396949142217636,impurity_or_gain
+Chronic_Pain_Level,0.12827159464359283,impurity_or_gain
+BMI,0.09855804592370987,impurity_or_gain
+Age,0.03428221121430397,impurity_or_gain

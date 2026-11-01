@@ -1,0 +1,91 @@
+{
+  "best_model_name": "XGBoost",
+  "random_state": 42,
+  "n_train": 8000,
+  "n_test": 2000,
+  "positive_rate_train": 0.407875,
+  "positive_rate_test": 0.408,
+  "features": [
+    "Age",
+    "Menstrual_Irregularity",
+    "Chronic_Pain_Level",
+    "Hormone_Level_Abnormality",
+    "Infertility",
+    "BMI"
+  ],
+  "threshold_default": 0.5,
+  "threshold_oof_f1": 0.4,
+  "calibration": {
+    "fraction_of_positives": [
+      0.0,
+      0.1987179487179487,
+      0.2680722891566265,
+      0.36099585062240663,
+      0.47950089126559714,
+      0.5360501567398119,
+      0.6475409836065574,
+      0.5
+    ],
+    "mean_predicted_value": [
+      0.16738312962380322,
+      0.2656549170422248,
+      0.36036841041711437,
+      0.45747975479517733,
+      0.5538508538256355,
+      0.6455569521386795,
+      0.7328757272392022,
+      0.8232958813508352
+    ],
+    "ece": 0.09013288035988806,
+    "brier": 0.23313432816934074,
+    "n_bins": 10,
+    "scores_are_well_calibrated": false,
+    "output_label": "model score (not a calibrated probability)",
+    "note": "Reliability diagram and expected calibration error were estimated on the held-out test set after model selection. If ECE is high, treat outputs as ranking scores rather than probabilities."
+  },
+  "selection_rule": "Hyperparameters and the deployed algorithm are chosen from training-set inner stratified ROC-AUC only. A composite of ROC-AUC, PR-AUC, F1 and recall is stored for reporting; it is not used to pick the saved model, so the test set stays isolated from model selection. Accuracy is reported but is not a selection criterion.",
+  "train_stats": {
+    "n_train": 8000,
+    "positive_rate_train": 0.407875,
+    "feature_ranges": {
+      "Age": {
+        "min": 18.0,
+        "max": 49.0,
+        "mean": 33.83625,
+        "std": 9.186059325820839
+      },
+      "Menstrual_Irregularity": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.69325,
+        "std": 0.46114470342832736
+      },
+      "Chronic_Pain_Level": {
+        "min": 0.0,
+        "max": 10.0,
+        "mean": 5.046744153566132,
+        "std": 1.9918355988929102
+      },
+      "Hormone_Level_Abnormality": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.58575,
+        "std": 0.4925920599238279
+      },
+      "Infertility": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.299625,
+        "std": 0.45809372335254717
+      },
+      "BMI": {
+        "min": 15.0,
+        "max": 36.52245795623031,
+        "mean": 23.044055505307085,
+        "std": 3.874859716566332
+      }
+    }
+  },
+  "xgboost_available": true,
+  "disclaimer": "ENDOCARE is an academic prototype. Outputs are experimental model scores, not diagnoses. A low score does not rule out endometriosis."
+}

@@ -1,0 +1,300 @@
+{
+  "n_rows": 10000,
+  "n_columns": 7,
+  "columns": [
+    "Age",
+    "Menstrual_Irregularity",
+    "Chronic_Pain_Level",
+    "Hormone_Level_Abnormality",
+    "Infertility",
+    "BMI",
+    "Diagnosis"
+  ],
+  "dtypes": {
+    "Age": "int64",
+    "Menstrual_Irregularity": "int64",
+    "Chronic_Pain_Level": "float64",
+    "Hormone_Level_Abnormality": "int64",
+    "Infertility": "int64",
+    "BMI": "float64",
+    "Diagnosis": "int64"
+  },
+  "missing_by_column": {
+    "Age": 0,
+    "Menstrual_Irregularity": 0,
+    "Chronic_Pain_Level": 0,
+    "Hormone_Level_Abnormality": 0,
+    "Infertility": 0,
+    "BMI": 0,
+    "Diagnosis": 0
+  },
+  "duplicate_rows": 0,
+  "class_counts": {
+    "0": 5921,
+    "1": 4079
+  },
+  "positive_rate": 0.4079,
+  "nunique": {
+    "Age": 32,
+    "Menstrual_Irregularity": 2,
+    "Chronic_Pain_Level": 9875,
+    "Hormone_Level_Abnormality": 2,
+    "Infertility": 2,
+    "BMI": 9776,
+    "Diagnosis": 2
+  },
+  "describe": {
+    "Age": {
+      "count": 10000.0,
+      "mean": 33.6923,
+      "std": 9.205307951364144,
+      "min": 18.0,
+      "25%": 26.0,
+      "50%": 34.0,
+      "75%": 42.0,
+      "max": 49.0
+    },
+    "Chronic_Pain_Level": {
+      "count": 10000.0,
+      "mean": 5.030618647371141,
+      "std": 1.9839553486873442,
+      "min": 0.0,
+      "25%": 3.6716969955761387,
+      "50%": 5.035825216498645,
+      "75%": 6.396854092608045,
+      "max": 10.0
+    },
+    "BMI": {
+      "count": 10000.0,
+      "mean": 23.052865422253397,
+      "std": 3.8916145061576124,
+      "min": 15.0,
+      "25%": 20.32932680780303,
+      "50%": 23.03631456090116,
+      "75%": 25.712923123453702,
+      "max": 37.146126619493465
+    },
+    "Menstrual_Irregularity": {
+      "count": 10000.0,
+      "mean": 0.6975,
+      "std": 0.4593635286841442,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Hormone_Level_Abnormality": {
+      "count": 10000.0,
+      "mean": 0.5911,
+      "std": 0.4916553289615091,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Infertility": {
+      "count": 10000.0,
+      "mean": 0.2983,
+      "std": 0.4575347460077545,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Diagnosis": {
+      "count": 10000.0,
+      "mean": 0.4079,
+      "std": 0.49146896562694314,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    }
+  },
+  "iqr_outliers": {
+    "Age": {
+      "q1": 26.0,
+      "q3": 42.0,
+      "iqr": 16.0,
+      "lower_fence": 2.0,
+      "upper_fence": 66.0,
+      "n_outliers": 0,
+      "pct_outliers": 0.0
+    },
+    "Chronic_Pain_Level": {
+      "q1": 3.6716969955761387,
+      "q3": 6.396854092608045,
+      "iqr": 2.7251570970319063,
+      "lower_fence": -0.41603864997172035,
+      "upper_fence": 10.484589738155904,
+      "n_outliers": 0,
+      "pct_outliers": 0.0
+    },
+    "BMI": {
+      "q1": 20.32932680780303,
+      "q3": 25.712923123453702,
+      "iqr": 5.383596315650671,
+      "lower_fence": 12.253932334327025,
+      "upper_fence": 33.78831759692971,
+      "n_outliers": 30,
+      "pct_outliers": 0.3
+    }
+  },
+  "correlations": {
+    "Age": {
+      "Age": 1.0,
+      "Menstrual_Irregularity": -0.007918,
+      "Chronic_Pain_Level": -0.009348,
+      "Hormone_Level_Abnormality": -0.00407,
+      "Infertility": 0.014078,
+      "BMI": -0.011878,
+      "Diagnosis": -0.011559
+    },
+    "Menstrual_Irregularity": {
+      "Age": -0.007918,
+      "Menstrual_Irregularity": 1.0,
+      "Chronic_Pain_Level": 0.000103,
+      "Hormone_Level_Abnormality": 0.014647,
+      "Infertility": -0.012202,
+      "BMI": 0.004868,
+      "Diagnosis": 0.095197
+    },
+    "Chronic_Pain_Level": {
+      "Age": -0.009348,
+      "Menstrual_Irregularity": 0.000103,
+      "Chronic_Pain_Level": 1.0,
+      "Hormone_Level_Abnormality": 0.002467,
+      "Infertility": 0.009299,
+      "BMI": 0.005755,
+      "Diagnosis": 0.116996
+    },
+    "Hormone_Level_Abnormality": {
+      "Age": -0.00407,
+      "Menstrual_Irregularity": 0.014647,
+      "Chronic_Pain_Level": 0.002467,
+      "Hormone_Level_Abnormality": 1.0,
+      "Infertility": 0.00389,
+      "BMI": -0.015499,
+      "Diagnosis": 0.187039
+    },
+    "Infertility": {
+      "Age": 0.014078,
+      "Menstrual_Irregularity": -0.012202,
+      "Chronic_Pain_Level": 0.009299,
+      "Hormone_Level_Abnormality": 0.00389,
+      "Infertility": 1.0,
+      "BMI": 0.011529,
+      "Diagnosis": 0.096172
+    },
+    "BMI": {
+      "Age": -0.011878,
+      "Menstrual_Irregularity": 0.004868,
+      "Chronic_Pain_Level": 0.005755,
+      "Hormone_Level_Abnormality": -0.015499,
+      "Infertility": 0.011529,
+      "BMI": 1.0,
+      "Diagnosis": 0.08031
+    },
+    "Diagnosis": {
+      "Age": -0.011559,
+      "Menstrual_Irregularity": 0.095197,
+      "Chronic_Pain_Level": 0.116996,
+      "Hormone_Level_Abnormality": 0.187039,
+      "Infertility": 0.096172,
+      "BMI": 0.08031,
+      "Diagnosis": 1.0
+    }
+  },
+  "target_correlations": {
+    "Hormone_Level_Abnormality": 0.18703888394198218,
+    "Chronic_Pain_Level": 0.11699602320294175,
+    "Infertility": 0.0961718203658868,
+    "Menstrual_Irregularity": 0.09519676372358889,
+    "BMI": 0.08031033986181255,
+    "Age": -0.011559013181658712
+  },
+  "binary_positive_rates": {
+    "Menstrual_Irregularity": {
+      "0": 0.3368595041322314,
+      "1": 0.43870967741935485
+    },
+    "Hormone_Level_Abnormality": {
+      "0": 0.29738322328197603,
+      "1": 0.4843512096092032
+    },
+    "Infertility": {
+      "0": 0.37708422402736214,
+      "1": 0.48038887026483407
+    }
+  },
+  "association_tests_numeric": {
+    "Age": {
+      "mean_class_0": 33.780611383212296,
+      "mean_class_1": 33.564108850208385,
+      "welch_t": 1.1577960351497845,
+      "p_value": 0.24697864230932765
+    },
+    "Chronic_Pain_Level": {
+      "mean_class_0": 4.837972379499192,
+      "mean_class_1": 5.31026036153388,
+      "welch_t": -11.791756014810316,
+      "p_value": 7.471865200988621e-32
+    },
+    "BMI": {
+      "mean_class_0": 22.793472044976582,
+      "mean_class_1": 23.429395990249482,
+      "welch_t": -7.977879073002539,
+      "p_value": 1.6832731640012893e-15
+    }
+  },
+  "chi_square_binary": {
+    "Menstrual_Irregularity": {
+      "chi2": 90.2030196956027,
+      "p_value": 2.149337936523963e-21,
+      "dof": 1
+    },
+    "Hormone_Level_Abnormality": {
+      "chi2": 349.06173115331006,
+      "p_value": 6.783623114950179e-78,
+      "dof": 1
+    },
+    "Infertility": {
+      "chi2": 92.06295349203262,
+      "p_value": 8.396255071581354e-22,
+      "dof": 1
+    }
+  },
+  "bmi_equals_15": 225,
+  "pain_equals_0": 71,
+  "pain_equals_10": 56,
+  "leakage_notes": [
+    "No feature is nearly perfectly correlated with Diagnosis. That does not prove the labels are independent of the features by construction, only that a trivial one-to-one mapping is not visible."
+  ],
+  "observations": [
+    "The file contains 10000 rows and 7 columns.",
+    "Missing values: 0 across all cells.",
+    "Exact duplicate rows: 0.",
+    "Diagnosis class counts: {'0': 5921, '1': 4079} (positive rate 0.4079).",
+    "The imbalance is moderate, not extreme; stratified splits and class-weight options are still appropriate.",
+    "Chronic_Pain_Level and BMI have thousands of unique values, which is consistent with continuous (possibly generated) measurements rather than a short ordinal scale.",
+    "BMI equals 15.0 in 225 rows, suggesting a lower clip. Chronic_Pain_Level hits 0.0 in 71 rows and 10.0 in 56 rows.",
+    "Age is only weakly associated with Diagnosis in this file; hormone abnormality and chronic pain show the largest (still modest) associations.",
+    "Feature definitions are not accompanied by a data dictionary in the repository. Coding of binary fields should be treated as file-specific, not clinical standard.",
+    "Provenance is uncertain. This project treats the table as a structured Kaggle-style research file, not as a verified clinical registry."
+  ],
+  "provenance": {
+    "filename": "structured_endometriosis_data.csv",
+    "source_claim": "Supplied locally as a structured endometriosis table intended for academic ML work.",
+    "unknowns": [
+      "Collection site, years, inclusion/exclusion criteria, and ethics approval are not documented in-file.",
+      "It is not known whether Diagnosis is surgically confirmed, clinically coded, self-reported, or synthetically assigned.",
+      "Binary feature definitions (irregularity, hormone abnormality, infertility) have no codebook.",
+      "The combination of clipped BMI, dense unique continuous values, and modest linear associations is compatible with simulated or heavily processed data.",
+      "Licence and redistribution terms were not bundled with the CSV; the packaged ZIP therefore omits the dataset file."
+    ]
+  }
+}

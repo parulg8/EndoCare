@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+
+:root {
+  --forest: #245C49;
+  --deep-green: #173F35;
+  --sage: #A8C3AE;
+  --mint: #E7F1EA;
+  --ivory: #FAFAF5;
+  --white: #FFFFFF;
+  --dark-text: #263A32;
+  --secondary-text: #65756C;
+  --coral: #D98989;
+  --line: rgba(23, 63, 53, 0.12);
+  --shadow: rgba(23, 63, 53, 0.12);
+}
+
+html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+  background: linear-gradient(180deg, #f6f9f6 0%, var(--ivory) 100%);
+  color: var(--dark-text);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+[data-testid="stHeader"] {
+  background: transparent;
+}
+
+[data-testid="stToolbar"] {
+  visibility: hidden;
+}
+
+.stApp {
+  background: linear-gradient(180deg, #f3f7f2 0%, var(--ivory) 100%);
+}
+
+section.main > div {
+  padding-top: 1.1rem;
+}
+
+main p, main li, main div, main span, main label, .stMarkdownContainer p {
+  color: var(--dark-text);
+}
+
+[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, var(--deep-green) 0%, var(--forest) 100%);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+[data-testid="stSidebar"] * {
+  color: #f5faf6 !important;
+}
+
+[data-testid="stSidebar"] .stRadio label {
+  padding: 0.7rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.15s ease;
+}
+
+[data-testid="stSidebar"] .stRadio label:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] .stCaption,
+[data-testid="stSidebar"] .stAlert {
+  color: rgba(245, 250, 246, 0.9) !important;
+}
+
+h1, h2, h3, h4, .section-title, .hero h1, .hero .tagline {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--deep-green);
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 3.25rem;
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 2.35rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.4rem 0;
+}
+
+p, li, label, .stMarkdownContainer p, .stMarkdownContainer li, .stDataFrame, .stDataFrameContainer, .stSelectbox, .stSlider {
+  color: var(--dark-text);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--deep-green) 0%, var(--forest) 52%, #2F675A 100%);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 2.5rem 2.3rem 2rem;
+  box-shadow: 0 22px 44px rgba(23, 63, 53, 0.18);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.3rem;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  right: -80px;
+  top: -100px;
+  background: radial-gradient(circle, rgba(168, 195, 174, 0.34), transparent 68%);
+}
+
+.brand-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: var(--sage);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(2.7rem, 4vw, 4rem);
+  line-height: 0.94;
+  margin: 0;
+}
+
+.hero .tagline {
+  font-size: 1.75rem;
+  color: #edf8ee;
+  margin: 0.45rem 0 0.9rem 0;
+}
+
+.hero p {
+  max-width: 720px;
+  color: rgba(255,255,255,0.86);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.primary-action, .secondary-action {
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-action {
+  background: var(--white);
+  color: var(--deep-green);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.secondary-action {
+  background: rgba(255,255,255,0.08);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.primary-action:hover, .secondary-action:hover {
+  transform: translateY(-1px);
+}
+
+.soft-card {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 1.15rem 1.2rem;
+  box-shadow: 0 10px 18px rgba(23, 63, 53, 0.04);
+  margin-bottom: 1rem;
+}
+
+.soft-card h3 {
+  color: var(--deep-green);
+}
+
+.soft-card p, .soft-card li {
+  color: var(--secondary-text);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin-top: 0.3rem;
+}
+
+.section-kicker {
+  color: var(--forest);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 0.3rem;
+}
+
+.section-title {
+  margin-bottom: 0.2rem;
+}
+
+.health-note {
+  background: #fef5f2;
+  border: 1px solid rgba(217, 137, 137, 0.35);
+  border-left: 5px solid var(--coral);
+  border-radius: 16px;
+  padding: 0.95rem 1rem;
+  color: var(--dark-text);
+  margin: 1rem 0 1.2rem 0;
+}
+
+.health-note strong {
+  color: var(--deep-green);
+}
+
+.result-panel {
+  border-radius: 22px;
+  padding: 1.4rem 1.5rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f3faf5 100%);
+  border: 1px solid rgba(36, 92, 73, 0.14);
+  box-shadow: 0 12px 22px rgba(23, 63, 53, 0.06);
+  margin: 1rem 0;
+}
+
+.result-score {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.4rem;
+  line-height: 1;
+  color: var(--deep-green);
+  margin: 0;
+}
+
+[data-testid="stMetric"] {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(23, 63, 53, 0.04);
+  padding: 0.8rem 1rem;
+}
+
+div[data-testid="stMetric"] * {
+  color: var(--dark-text) !important;
+}
+
+.stButton > button {
+  background: #E1F0E7;
+  color: var(--deep-green);
+  border: 1px solid rgba(23, 63, 53, 0.18);
+  border-radius: 999px;
+  padding: 0.65rem 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(23, 63, 53, 0.08);
+}
+
+.stButton > button:hover {
+  background: #D2E7D8;
+  color: var(--deep-green);
+}
+
+.stButton > button:focus,
+.stButton > button:active {
+  background: #D2E7D8;
+  color: var(--deep-green);
+  box-shadow: 0 0 0 0.2rem rgba(168, 195, 174, 0.45);
+}
+
+[data-testid="stSlider"] label,
+.stSelectbox label,
+.stNumberInput label,
+.stRadio label,
+[data-testid="stExpander"] summary,
+.stTabs [role="tab"] {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.stTabs [role="tab"] {
+  background: rgba(168, 195, 174, 0.14);
+  border-radius: 12px 12px 0 0;
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.9rem;
+}
+
+.stTabs [role="tab"][aria-selected="true"] {
+  background: rgba(36, 92, 73, 0.08);
+  color: var(--deep-green);
+}
+
+input, textarea, select {
+  background: var(--white) !important;
+  color: var(--dark-text) !important;
+  border: 1px solid rgba(36, 92, 73, 0.2) !important;
+  border-radius: 12px !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--secondary-text) !important;
+}
+
+[data-testid="stDataFrame"] {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+div[data-testid="stDataFrame"] > div {
+  background: rgba(255,255,255,0.8);
+}
+
+.stDataFrame .stDataFrameContainer {
+  color: var(--dark-text);
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"] {
+  border: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+}
+
+.stAlert {
+  background: rgba(231, 241, 234, 0.9);
+  border: 1px solid rgba(36, 92, 73, 0.16);
+  border-left: 5px solid var(--forest);
+  color: var(--dark-text);
+}
+
+.stWarning {
+  background: rgba(255, 248, 244, 0.9);
+  border: 1px solid rgba(217, 137, 137, 0.3);
+  border-left: 5px solid var(--coral);
+}
+
+.stInfo {
+  background: rgba(231, 241, 234, 0.9);
+  border-left: 5px solid var(--sage);
+}
+
+.stSuccess {
+  background: rgba(231, 241, 234, 0.9);
+  border-left: 5px solid var(--forest);
+}
+
+.stError {
+  background: rgba(255, 244, 244, 0.9);
+  border-left: 5px solid #d96d6d;
+}
+
+[data-testid="stFileUploaderDropzone"] {
+  border: 1px dashed rgba(36, 92, 73, 0.35);
+  background: rgba(255,255,255,0.7);
+}
+
+footer, [data-testid="stFooter"] {
+  visibility: hidden;
+}
+
+.small-note {
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem 1.2rem 1.2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-action, .secondary-action {
+    width: 100%;
+  }
+}
